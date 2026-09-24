@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جنبك - Janbak | Delivery OS</title>
+    <!-- استيراد خط عربي أنيق -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+        body {
+            background-color: #FAFAFA;
+            color: #1A1A1A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: #FFFFFF;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #EEEEEE;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .badge-circle {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #FF6A1F, #FF8A00);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .brand-name {
+            font-weight: 900;
+            font-size: 22px;
+            letter-spacing: -0.5px;
+        }
+        .tag {
+            font-size: 11px;
+            color: #777;
+            background: #F0F0F0;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        main {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .hero-card {
+            background: linear-gradient(135deg, #FF6A1F, #FF8A00);
+            color: white;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(255, 106, 31, 0.2);
+        }
+        .hero-card h1 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            font-weight: 900;
+        }
+        .hero-card p {
+            font-size: 14px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        .search-box {
+            display: flex;
+            background: #F5F5F5;
+            border-radius: 12px;
+            padding: 12px 15px;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid #E5E5E5;
+        }
+        .search-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+            width: 100%;
+            font-size: 14px;
+            font-family: 'Cairo', sans-serif;
+        }
+        .section-title {
+            font-weight: 700;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .service-card {
+            background: #F9F9F9;
+            border: 1px solid #EEEEEE;
+            padding: 20px;
+            border-radius: 16px;
+            text-align: center;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .service-card:hover {
+            border-color: #FF6A1F;
+            background: #FFF9F5;
+        }
+        .service-card h3 {
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: 700;
+        }
+        footer {
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            border-top: 1px solid #EEEEEE;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- الهيدر -->
+        <header>
+            <div class="logo-area">
+                <div class="badge-circle">ج</div>
+                <div class="brand-name">Janbak <span style="color:#FF6A1F;">جنبك</span></div>
+            </div>
+            <div class="tag">RIYADH • 2026</div>
+        </header>
+
+        <!-- المحتوى الرئيسي -->
+        <main>
+            <div class="hero-card">
+                <h1>سرعة، دقة، ويقظة</h1>
+                <p>نظام تشغيل التوصيل الأسرع والأكثر موثوقية. طائر الكاتب يرافق طلباتك لتصل في أسرع وقت.</p>
+            </div>
+
+            <div class="search-box">
+                <svg width="18" height="18" fill="none" stroke="#777" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" placeholder="ابحث عن وجهتك أو طلبك...">
+            </div>
+
+            <div class="section-title">خدمات جنبك</div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <span style="font-size: 28px;">📦</span>
+                    <h3>توصيل سريح</h3>
+                </div>
+                <div class="service-card">
+                    <span style="font-size: 28px;">🍔</span>
+                    <h3>المطاعم</h3>
+                </div>
+                <div class="service-card">
+                    <span style="font-size: 28px;">⚡</span>
+                    <h3>تتبع مباشر</h3>
+                </div>
+                <div class="service-card">
+                    <span style="font-size: 28px;">⚙️</span>
+                    <h3>لوحة التحكم</h3>
+                </div>
+            </div>
+        </main>
+
+        <!-- التذيل -->
+        <footer>
+            جميع الحقوق محفوظة © 2026 - جنبك (Janbak)
+        </footer>
+    </div>
+
+</body>
+</html>
